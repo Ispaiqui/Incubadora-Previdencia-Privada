@@ -1,0 +1,57 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+dt,
+dd,
+dl {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: rgba(145, 145, 228, 0.37);
+  font: #222;
+}
+
+.menu {
+  background: rgba(11, 11, 218, 0.24);
+  margin-top: 0;
+  padding: 10px;
+}
+
+.menu h1 p{
+  padding: 20px;
+  width: 2fr;
+}
+
+.welcome-menu {
+  grid: 2;
+  padding: 10px;
+}
+
+.current-menu {
+  background: rgba(11, 11, 218, 0.24);
+  display: block;
+  text-decoration: none;
+  width: 5fr;
+  margin: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.balence p {
+  text-align: center;
+}
+
+.button-menu {
+  text-align: center;
+}
+
+.footer-menu {
+  background: rgba(11, 11, 218, 0.24);
+  text-align: center;
+  margin-top: 15px;
+}
