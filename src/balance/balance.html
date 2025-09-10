@@ -9,41 +9,58 @@
 </head>
 
 <body>
-    <div>
-        <nav class="menu">
-            <h1><img src="" alt="icon">My pension accont</h1>
-            <p id="last-update">last update -> <img src="" alt="icon"></p>
+    <div class="titulo-menu">
+        <nav>
+            <ul>
+                <li>
+                    <h1><img src="" alt="icon">My pension accont</h1>
+                </li>
+                <li>
+                    <p id="last-update">last update -> <img src="" alt="icon"></p>
+
+                </li>
+            </ul>
         </nav>
-        <dl class="welcome-menu">
+    </div>
+    <div class="welcome-menu">
+        <dl>
             <!-- trocar por nome -->
-            <dt>welcome back, 'nome'</dt>
+            <dt>Welcome back, 'nome'</dt>
             <dd>here's your pension accont overview</dd>
         </dl>
     </div>
     <div class="current-menu balence">
         <!-- trocar por dados reais -->
-        <h2>Current Balance <img src="" alt="icon"></h2>
-        <p>$7.00</p>
-        <p>2,4% this month</p>
-    </div>
-    <div class="current-menu summary">
-        <h2>Interest Summary</h2>
         <div>
-            <!-- trocar por dados reais -->
-            <p>anual Interest rate</p>
-            <p>4.25%</p>
-
-            <p>Interest Earned this Year</p>
-            <p>$8.00</p>
-
-            <p>Projected Annual Interest</p>
-            <p>$20.00</p>
-            <p>Besed on Current balence and rate</p>
+            <h2>Current Balance <img src="" alt="icon"></h2>
+        </div>
+        <div class="dados-balance">
+            <p>$7.00</p>
+            <p>2,4% this month</p>
+        </div>
+    </div>
+    <div class="current-menu">
+        <h2>Interest Summary</h2>
+        <div class="summary">
+            <div class="summary-itens ">
+                <!-- trocar por dados reais -->
+                <p>anual Interest rate</p>
+                <p>4.25%</p>
+            </div>
+            <div class="summary-itens">
+                <p>Interest Earned this Year</p>
+                <p>$8.00</p>
+            </div>
+            <div class="summary-itens-ext">
+                <p>Projected Annual Interest</p>
+                <p>$20.00</p>
+                <p>Besed on Current balence and rate</p>
+            </div>
         </div>
     </div>
     <div class="current-menu monthly-interest">
         <h2>monthly Interest breakdown</h2>
-        <ul>
+        <ul class="summary-itens">
             <!-- trocar por dados reais -->
             <li>january 2025 <p>$5.00</p>
             </li>
@@ -56,10 +73,9 @@
         </ul>
     </div>
     <div class="button-menu">
-        <img src="" alt="icon">
-        <button onclick="">Download Statement</button>
-        <img src="" alt="icon">
-        <button onclick="">Contact Suport</button>
+
+        <button onclick=""> <img src="" alt="icon">Download Statement</button>
+        <button onclick=""> <img src="" alt="icon">Contact Suport</button>
     </div>
     <footer class="footer-menu">
         <p>&copy;incubadora</p>

@@ -1,3 +1,4 @@
+
 body,
 h1,
 h2,
@@ -12,46 +13,99 @@ dl {
 }
 
 body {
-  background: rgba(145, 145, 228, 0.37);
-  font: #222;
+  background: #faf6ed;
+  color: #222;
+  display: grid;
+  grid-template-columns: 1fr minmax(300px,800px) 1fr;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu {
-  background: rgba(11, 11, 218, 0.24);
-  margin-top: 0;
+.titulo-menu {
+  grid-column: 1 / 4;
+  background: #756c5ed8;
+  margin-bottom: 2rem;
+  padding: 15px;
+  grid-column: 0;
+}
+
+.titulo-menu ul {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
-.menu h1 p{
-  padding: 20px;
-  width: 2fr;
+.titulo-menu li {
+  display: block;
+  padding: 10px;
+  margin-right: 100px;
+  color: #222;
 }
 
 .welcome-menu {
-  grid: 2;
-  padding: 10px;
+  grid-column: 2 / 3;
+  padding: 30px;
+}
+
+.welcome-menu dt {
+  color: #222;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.welcome-menu dd {
+  color: #4c4b4b;
 }
 
 .current-menu {
-  background: rgba(11, 11, 218, 0.24);
-  display: block;
-  text-decoration: none;
-  width: 5fr;
-  margin: 50px;
-  margin-bottom: 30px;
-  padding: 10px;
+  grid-column: 2 / 3 ;
+  background: #756c5ed8;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.balence p {
+.summary {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+padding: 20px;
+margin: 20px;
+}
+
+.summary-itens{
+  border-radius: 10px;
+  font-size: 20px;
+  background: #faf6ed;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.summary-itens-ext {
+  border-radius: 10px;
+  font-size: 20px;
+  background: #faf6ed;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  grid-column: 1 / 3;
+}
+
+.summary-itens li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dados-balance {
   text-align: center;
+  font-size: 20px;
 }
 
 .button-menu {
-  text-align: center;
+  grid-column: 2/3;
 }
 
 .footer-menu {
-  background: rgba(11, 11, 218, 0.24);
+  grid-column: 1/4;
+  background: #756c5ed8;
+  margin-top: 10px;
   text-align: center;
-  margin-top: 15px;
 }
